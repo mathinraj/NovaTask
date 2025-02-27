@@ -20,7 +20,7 @@ NovaTask is a simple and intuitive todo/task management application built using 
 
 ## Deployment Link
 
-
+  [NovaTask](https://novatask.vercel.app/)
 
 ## Usage
 
@@ -38,6 +38,7 @@ NovaTask is a simple and intuitive todo/task management application built using 
 - Dropdown to filter the tasks
 - Adding due date for the tasks
 - Reset / clear all option with enhanced UI
+- Rearrange task
 
 ## Contributing
 
