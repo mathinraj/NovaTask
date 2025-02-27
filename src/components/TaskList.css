@@ -1,0 +1,82 @@
+.taskList {
+  width: 90%;
+  max-width: 800px;
+  background-color: rgba(215, 219, 221, 0.7);
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position:relative
+}
+
+.incompleted-tasks,
+.completed-tasks {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.incompleted-tasks {
+  background-color: rgba(248, 249, 249, 0.913);
+  border: 1px solid rgba(224, 224, 224, 0.7);
+}
+
+.completed-tasks {
+  background-color: rgba(229, 231, 233, 0.352);
+  border: 1px solid rgba(200, 230, 201, 0.7);
+}
+
+.incompleted-tasks:hover,
+.completed-tasks:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#isCompleted {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #2c3e50;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+#isCompleted:checked {
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+}
+
+#taskName {
+  flex-grow: 1;
+  margin: 0 15px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.completed-tasks #taskName {
+  text-decoration: line-through;
+  color: #777777;
+}
+
+.tasklist-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.tasklist-buttons p {
+  font-size: 18px;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tasklist-buttons p:hover {
+  color: #1abc9c;
+}

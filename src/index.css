@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #f5f5f5; */
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Ensure the background is fixed */
+  background-repeat: no-repeat;
+}
