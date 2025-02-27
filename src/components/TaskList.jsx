@@ -38,7 +38,6 @@ const TaskList = ({ tasks, setTasks, setTaskName, setIsAdd, setEditingID }) => {
                   )
                 }
               />
-              <p>{task.id}</p>
               <p id="taskName">{task.name}</p>
               <div className="tasklist-buttons">
                 <p id="btn-update" onClick={() => handleUpdate(task)}>
