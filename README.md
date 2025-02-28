@@ -1,5 +1,5 @@
 
-# NovaTask - Todo/Task Management App
+# [NovaTask](https://novatask.vercel.app/) - Todo/Task Management App
 
 NovaTask is a simple and intuitive todo/task management application built using React. It helps you keep track of your tasks and stay organized.
 
