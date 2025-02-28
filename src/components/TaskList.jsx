@@ -2,12 +2,11 @@ import React from "react";
 import "./TaskList.css";
 
 const TaskList = ({ tasks, setTasks, setTaskName, setIsAdd, setEditingID }) => {
-
   const handleUpdate = (task) => {
     setIsAdd(false);
     setEditingID(task.id);
     setTaskName(task.name);
-  }
+  };
 
   const handleDelete = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
@@ -40,11 +39,15 @@ const TaskList = ({ tasks, setTasks, setTaskName, setIsAdd, setEditingID }) => {
               />
               <p id="taskName">{task.name}</p>
               <div className="tasklist-buttons">
-                <p id="btn-update" onClick={() => handleUpdate(task)}>
-                  <i className="fa-regular fa-pen-to-square"></i>
-                </p>
+                {!task.isCompleted ? (
+                  <p id="btn-update" onClick={() => handleUpdate(task)}>
+                    <i className="fa-regular fa-pen-to-square"></i>
+                  </p>
+                ) : (
+                  ""
+                )}
                 <p id="btn-delete" onClick={() => handleDelete(task.id)}>
-                  <i className="fa-solid fa-trash-can-arrow-up"></i>
+                <i class="fa-solid fa-trash"></i>
                 </p>
               </div>
             </div>

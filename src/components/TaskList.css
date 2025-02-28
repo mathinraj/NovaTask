@@ -30,8 +30,7 @@
   border: 1px solid rgba(200, 230, 201, 0.7);
 }
 
-.incompleted-tasks:hover,
-.completed-tasks:hover {
+.incompleted-tasks:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
